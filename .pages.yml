@@ -1,0 +1,84 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: site
+    label: Website Settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: title
+        label: Website Title
+        type: string
+      - name: introduction
+        label: Introduction
+        type: rich-text
+      - name: history
+        label: Village History
+        type: rich-text
+      - name: contact
+        label: Contact Information
+        type: rich-text
+
+  - name: gallery
+    label: Photo Gallery
+    type: collection
+    path: content/gallery
+    fields:
+      - name: title
+        label: Photo Title
+        type: string
+      - name: image
+        label: Photo
+        type: image
+      - name: caption
+        label: Caption
+        type: text
+
+  - name: news
+    label: News
+    type: collection
+    path: content/news
+    fields:
+      - name: title
+        label: News Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: body
+        label: News Details
+        type: rich-text
+      - name: image
+        label: News Image
+        type: image
+
+  - name: notices
+    label: Notice Board
+    type: collection
+    path: content/notices
+    fields:
+      - name: title
+        label: Notice Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: body
+        label: Notice Details
+        type: rich-text
+
+  - name: faq
+    label: Questions and Answers
+    type: collection
+    path: content/faq
+    fields:
+      - name: question
+        label: Question
+        type: string
+      - name: answer
+        label: Answer
+        type: rich-text
